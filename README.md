@@ -1,3 +1,8 @@
+Let's say you want to split a file into two, but you want to keep the git history-- i.e. you want "blame" to tell you who authored a line of code after the split. 
+A fellow at Microsoft wrote a tutorial on doing that: https://devblogs.microsoft.com/oldnewthing/20190916-00/?p=102892
+
+However, Chen's recipe runs into trouble in the case where one of the split files is to have the same name as the original combined file.
+
 Here's an update to Chen's demo, in this case keeping one of the split files having the same name as the original. There's a couple of non-intuitive steps here.
 Initial setup, making a repo (with the current branch name v1) with one "big" file:
 ```
